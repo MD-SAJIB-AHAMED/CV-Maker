@@ -7,6 +7,10 @@ body {
 
 .input-container {
     margin: 20px;
+    padding: 10px 0;
+    background-color: #212121;
+    text-align: center;
+    color: #fff;
 }
 
 #cv {
@@ -125,4 +129,11 @@ input, textarea {
     transform: translate(-50%, -50%);
     font-size: 24px;
     color: #1a73e8; /* Same color as the section titles */
+}
+
+footer {
+    padding: 20px 0;
+    background-color: #212121;
+    text-align: center;
+    color: #fff;
 }
