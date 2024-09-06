@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.input-container {
+    margin: 20px;
+}
+
+#cv {
+    display: flex;
+    width: 210mm;
+    height: 297mm;
+    background-color: white;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+    background-color: #f0f0f0;
+    width: 30%;
+    padding: 20px;
+}
+
+.right-section {
+    width: 70%;
+    padding: 20px;
+}
+
+.circle-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+h2 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: 1px solid green;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#loading {
+    font-size: 24px;
+    text-align: center;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.fa {
+    margin-right: 5px;
+}
+
+input, textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Color for the section titles */
+#aboutMeText, #contactText, #educationText, #languageText, #skillsText, #projectsText {
+    color: #1a73e8; /* Example color: blue */
+    font-weight: bold;
+}
+
+/* Add a dot in front of the list elements */
+#educationText li, #languageText li, #skillsText li, #projectsText li {
+    list-style-type: disc;
+    margin-left: 20px; /* Adjust margin for alignment */
+}
+
+/* Icon for contact elements */
+#contactText li {
+    display: flex;
+    align-items: center;
+}
+
+/* Icons for specific contact elements */
+.email-icon::before {
+    content: "\2709"; /* Email Icon */
+    margin-right: 8px;
+}
+
+.phone-icon::before {
+    content: "\260E"; /* Phone Icon */
+    margin-right: 8px;
+}
+
+.address-icon::before {
+    content: "\1F4CD"; /* Location Pin Icon */
+    margin-right: 8px;
+}
+
+/* Loading Animation */
+#loading {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #1a73e8; /* Same color as the section titles */
+}

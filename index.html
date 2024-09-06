@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Generator</title>
+    <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <div id="loading" style="display: none;">Loading...</div>
+
+    <div class="input-container">
+        <h2>Create Your CV</h2>
+        <input type="text" id="name" placeholder="Full Name">
+        <input type="text" id="title" placeholder="Title (e.g., Software Engineer)">
+        <textarea id="about" placeholder="About Me"></textarea>
+
+        <h3>Contact Info</h3>
+    <input type="text" id="email" placeholder="Email">
+        <input type="text" id="phone" placeholder="Phone">
+        <input type="text" id="address" placeholder="Address">
+
+        <h3>Education</h3>
+        <div id="education-list"></div>
+        <button onclick="addEducation()">Add Education</button>
+
+        <h3>Languages</h3>
+        <div id="languages-list"></div>
+        <button onclick="addLanguage()">Add Language</button>
+
+        <h3>Skills</h3>
+        <div id="skills-list"></div>
+        <button onclick="addSkill()">Add Skill</button>
+
+        <h3>Projects</h3>
+        <div id="projects-list"></div>
+        <button onclick="addProject()">Add Project</button>
+
+        <h3>Profile Picture</h3>
+        <input type="file" id="picture">
+
+        <button onclick="generateCV()">Generate CV</button>
+        <button onclick="downloadCV()">Download CV</button>
+    </div>
+
+    <div id="cv-container" style="display: none;">
+        <div id="cv">
+            <div class="left-section">
+                <div id="profilePic" class="circle-img"></div>
+                <h3>About Me</h3>
+                <p id="aboutMeText"></p>
+
+                <h3>Contact Info</h3>
+                <p><i class="fa fa-envelope"></i> <span id="emailText"></span></p>
+                <p><i class="fa fa-phone"></i> <span id="phoneText"></span></p>
+                <p><i class="fa fa-map-marker"></i> <span id="addressText"></span></p>
+            </div>
+
+            <div class="right-section">
+                <h1 id="nameText"></h1>
+                <h2 id="titleText"></h2>
+                <hr>
+                <h3>Education</h3>
+                <ul id="educationText"></ul>
+                <hr>
+
+                <h3>Languages</h3>
+                <ul id="languageText"></ul>
+                <hr>
+
+                <h3>Skills</h3>
+                <ul id="skillsText"></ul>
+                <hr>
+
+                <h3>Projects</h3>
+                <ul id="projectsText"></ul>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
